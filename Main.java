@@ -1,21 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+// Programa principal para testar a classe Cilindro
 public class Main {
     public static void main(String[] args) {
 
-        Cilindro cilindro = new Cilindro (); // variável cilindro (do tipo Cilindro) contém uma referência para o objeto cilindro
-        cilindro.setRaio (2); // altera o valor nesta variável para 2 porque invoca o método set
-        cilindro.setAltura (3); // altera o valor nesta variável para 3 porque invoca o método set
+        // Cria um cilindro com raio 2 e altura 3
+        Cilindro cilindro = new Cilindro();
+        cilindro.setRaio(2);
+        cilindro.setAltura(3);
 
-        Cilindro cilindro2 = new Cilindro (); // criar uma segunda variável a partir da mesma classe (Cilindro) pelo que têm os mesmos atributos (mas podem tem valores- objetos, diferentes)
-        cilindro2.setRaio (3);
-        cilindro2.setAltura (2);
+        // Segundo cilindro com valores diferentes
+        Cilindro cilindro2 = new Cilindro();
+        cilindro2.setRaio(3);
+        cilindro2.setAltura(2);
 
-        System.out.println("volume: " + cilindro.volume ());
-        System.out.println("área: " + cilindro.area ());
+        // Exibe volume e área dos cilindros
+        System.out.println("Cilindro 1 -> volume: " + cilindro.volume());
+        System.out.println("Cilindro 1 -> área: " + cilindro.area());
 
-        System.out.println("volume 2: " + cilindro2.volume ());
-        System.out.println("área 2: " + cilindro2.area ());
-
+        System.out.println("Cilindro 2 -> volume: " + cilindro2.volume());
+        System.out.println("Cilindro 2 -> área: " + cilindro2.area());
     }
 }
